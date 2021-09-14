@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylus.css" />
+    <title>هم کد</title>
+  </head>
+
+  <body>
+    <div class="hero">
+      <div class="icons">
+        <div class="premium">
+          <i class="fas fa-crown"></i>
+        </div>
+        
+        <a href="https://github.com/valaDevs/codeMateV3"><div class="git">
+          <i class="fab fa-github"></i> 
+          
+        </div></a>
+        
+      </div>
+
+
+      <div class="person-info">
+        <h1>اطلاعات خود را وارد کنید تا هم کدی برای شما یافت شود</h1>
+        <div class="value-pairs">
+          <input type="text" id="proLang" placeholder="زبان برنامه نویسی" />
+          <input type="text" id="fName" placeholder="اسم" />
+        </div>
+        <button id="btn-find" onclick="eventHandlers()">
+          هم کد مرا پیدا کن <i class="fa fa-search fa-spin"></i>
+        </button>
+
+        <div class="you-are hide">
+          <ul id="you">
+          </ul>
+        </div>
+      </div>
+
+      <div class="random-codemates">
+       <div class="your-codemate"><h1><i class="fa fa-code fa-spin"></i>هم کد شما <i class="fa fa-heart fa-spin"></i></h1> </div>
+        <div class="codemate-card hider">
+          
+          <div class="img"></div>
+          <h1 id="code-name"></h1>
+          <h3 id="code-country"></h3>
+          <h3 id="code-mail"></h3>
+          <h3 id="lang"></h3>
+        </div>
+
+      </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.0.1/faker.min.js"></script>
+  </body>
+</html>
